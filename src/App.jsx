@@ -1,4 +1,5 @@
 import React from 'react'
+import { Footer } from './components/Footer'
 import { NavBar } from './components/NavBar'
 import { ProductList } from './components/ProductList'
 
@@ -11,6 +12,7 @@ export const App = () => {
       {/* product-List */}
       <ProductList />
       {/* product-List */}
+      <Footer />
     </div>
   )
 }
