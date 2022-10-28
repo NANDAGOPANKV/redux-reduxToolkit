@@ -12,8 +12,6 @@ export const ProductList = () => {
         setProduct(prosuctsapi)
     }, [])
     console.log(product);
-    console.log('function');
-
     return (
         <>
             <div className='w-full h-ful' >
@@ -21,10 +19,10 @@ export const ProductList = () => {
                     {
                         product.map((items, index) => {
                             return (
-                                <div key={index} className='bg-slate-700 w-[300px] sm:w-[220px] h-[300px] mx-auto p-2 rounded shadow-md hover:shadow-2xl  hover:bg-slate-900 hover:scale-105 hover:rounded-xl  duration-700  '>
+                                <div key={index} className='bg-slate-700 w-[300px] sm:w-[220px] h-[300px] mx-auto p-2 rounded'>
                                     <div className='w-full h-full flex flex-col '>
                                         <div className='mx-auto'>
-                                            <img className='w-[181px] h-[170px] ' src={items?.image} alt={items?.title} />
+                                            <img className='w-[197px] h-[170px] ' src={items?.image} alt={items?.title} />
                                         </div>
                                         <div className='mx-auto py-4 '>
                                             <p className=' '>{items?.title}</p>
