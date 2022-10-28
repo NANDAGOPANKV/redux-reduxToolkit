@@ -12,6 +12,8 @@ export const ProductList = () => {
         setProduct(prosuctsapi)
     }, [])
     console.log(product);
+    console.log('function');
+
     return (
         <>
             <div className='w-full h-ful' >
