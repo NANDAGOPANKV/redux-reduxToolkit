@@ -7,11 +7,7 @@ import { BeforeCartBtn } from './cartbutton/BeforeCartBtn'
 import { useSelector } from 'react-redux'
 
 export const ProductList = () => {
-
     const { setCount } = useSelector((state) => state.cart)
-
-    console.log(setCount);
-
 
     return (
         <>
@@ -30,7 +26,7 @@ export const ProductList = () => {
                                         </div>
                                         <div className='mx-auto'>
                                             {/* Cart btn */}
-                                            {setCount > 0 ? <AfterCartBtn /> : <BeforeCartBtn  />}
+                                            {setCount > 0 ? <AfterCartBtn /> : <BeforeCartBtn />}
                                             {/* Cart btn */}
                                         </div>
                                     </div>
